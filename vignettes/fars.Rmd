@@ -1,0 +1,48 @@
+---
+title: "Using the `fars` package"
+author: "Paul Visser"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Aim of the package
+
+This package allows the user to extract and summarise accident data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System. This is a is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+The user will be required to read the CSV.BZ2 file before being able to summarize or plot the data.
+
+## Accessing the package
+
+The lastest version of the package can also be loaded directly from GitHub using the `devtools` package:
+
+```{r eval = FALSE}
+library(devtools)
+install_github("geanders/countytimezones")
+library(countytimezones)
+```
+
+## Examples
+
+Before the you can proceed with summarising or plotting the accident data, you first need to read the data from the CSV.BZ2 file.
+
+An example of this is:
+
+```r
+accident_2014 <- fars_read("./data/accident_2014.csv.bz2")
+```
+
+You can then summarize the data to return a tibble containing the summarized accident count per year and month:
+
+```r
+fars_summarize_years(2013:2016)
+```
+
+Finally you can plot the accidents for a selected state (by state number) and year:
+
+```r
+fars_map_state(25,2014)
+```

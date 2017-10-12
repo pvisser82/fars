@@ -1,0 +1,28 @@
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+fars
+====
+
+The goal of fars is to allow the user to extract and summarise accident data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System. This is a is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+Example
+-------
+
+Before the you can proceed with summarising or plotting the accident data, you first need to read the data from the CSV.BZ2 file.
+
+An example of this is:
+
+``` r
+accident_2014 <- fars_read("./data/accident_2014.csv.bz2")
+```
+
+You can then summarize the data to return a tibble containing the summarized accident count per year and month:
+
+``` r
+fars_summarize_years(2013:2016)
+```
+
+Finally you can plot the accidents for a selected state (by state number) and year:
+
+``` r
+fars_map_state(25,2014)
+```
