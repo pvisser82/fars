@@ -1,7 +1,7 @@
 Package: fars
 Title: A package that plots accident data per state
 Version: 1.0.1
-Authors@R: Paul Visser <visser.paul@gmail.com>, role = c("aut", "cre"))
+Author: Paul Visser <visser.paul@gmail.com>, role = c("aut", "cre"))
 Description: This package reads CSV files containing accident information. It will extract and summarise the data before plotting it.
 Depends: R (>= 3.4.1)
 License: GPL (>= 2)
