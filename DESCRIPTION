@@ -1,4 +1,5 @@
 Package: fars
+Type: Package
 Title: A package that plots accident data per state
 Version: 1.0.1
 Author: Paul Visser <visser.paul@gmail.com>

@@ -15,16 +15,6 @@ This package allows the user to extract and summarise accident data from the US 
 
 The user will be required to read the CSV.BZ2 file before being able to summarize or plot the data.
 
-## Accessing the package
-
-The lastest version of the package can also be loaded directly from GitHub using the `devtools` package:
-
-```{r eval = FALSE}
-library(devtools)
-install_github("geanders/countytimezones")
-library(countytimezones)
-```
-
 ## Examples
 
 Before the you can proceed with summarising or plotting the accident data, you first need to read the data from the CSV.BZ2 file.
