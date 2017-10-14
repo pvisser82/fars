@@ -14,7 +14,7 @@ This function returns a tibble rendered from the CSV file
 }
 \description{
 This function reads a CSV file specified by the /code{filename} argument and
-returns a tibble containing the data. If the file does not exist, the function 
+returns a tibble containing the data. If the file does not exist, the function
 will stop and will return an error
 }
 \examples{

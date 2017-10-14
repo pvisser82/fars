@@ -10,7 +10,7 @@ fars_summarize_years(years)
 \item{years}{A list or vector containing the years to search}
 }
 \value{
-This function returns a tibble containing the summarizes accident count per year and month. 
+This function returns a tibble containing the summarizes accident count per year and month.
 The function will return an error if the year value is not numeric or integer
 }
 \description{

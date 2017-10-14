@@ -12,7 +12,7 @@ fars_map_state(state.num, year)
 \item{year}{A numeric or integer valaue representing the year that needs to be plotted}
 }
 \value{
-Returns a plot of all accidents using the \code{state.num} and \code{year} parameters. 
+Returns a plot of all accidents using the \code{state.num} and \code{year} parameters.
 Returns an error if the state number or year is invalid.
 }
 \description{

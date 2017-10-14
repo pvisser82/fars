@@ -14,17 +14,14 @@ Returns a list of data frames containing MONTH and year columns based on the "ac
 Returns NULL if the year does not exist
 }
 \description{
-This function uses a vector or list of years and returns a list of data frames containing the month and years for each 
+This function uses a vector or list of years and returns a list of data frames containing the month and years for each
 accident in the corresponding CSV file. It will display a warning and return NULL if the year does not exist
 }
 \examples{
-\dontrun
-{
-fars_read_years(c(2013,2014,2015))
-fars_read_years(2015)
-
-#warning
-fars_read_years(2019)
+\dontrun{
+fars_read_years(c(2014, 2015, 2016))
+fars_read_years(2014:2016)
+fars_read_years(list(2014, 2015, 2016))
 }
 
 }
