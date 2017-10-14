@@ -41,4 +41,4 @@ fars_map_state(25,2014)
 ```
 
 #3 Travis
-https://travis-ci.org/pvisser82/fars.svg?branch=master
+[![Travis-CI Build Status](https://travis-ci.org/pvisser82/fars.svg?branch=master)](https://travis-ci.org/pvisser82/fars.svg?branch=master)
