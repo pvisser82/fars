@@ -27,7 +27,7 @@ Finally you can plot the accidents for a selected state (by state number) and ye
 fars_map_state(25,2014)
 ```
 
-3 Travis
-========
+Travis
+------
 
 [![Travis-CI Build Status](https://travis-ci.org/pvisser82/fars.svg?branch=master)](https://travis-ci.org/pvisser82/fars.svg?branch=master)
